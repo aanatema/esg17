@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar/DesktopNavbar";
-import MobileNavbar from "@/components/Navbar/MobileNavbar";
+import Navbar from "@/components/Navbar/NavBar";
 
 export default function Contact() {
 	return (
 		<>
 			<Navbar />
-			<MobileNavbar />
 			<h1>Contact</h1>
 		</>
 	);

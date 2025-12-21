@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/DesktopNavbar";
+import Navbar from "@/components/Navbar/NavBar";
 
 export default function Pricing() {
 	return (
