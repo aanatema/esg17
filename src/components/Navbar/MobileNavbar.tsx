@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function MobileNavbar() {
 	return (
-		<div className='flex justify-center py-6'>
+		<div className='flex justify-end py-2 px-3 bg-pink-200'>
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
 					<Button

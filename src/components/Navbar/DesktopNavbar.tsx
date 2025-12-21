@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function DesktopNavbar() {
 	return (
-		<div className='flex justify-end py-2 px-6 bg-pink-200'>
+		<div className='flex justify-end py-2 px-3 bg-pink-200'>
 			<NavigationMenu>
 				<NavigationMenuList className='flex-wrap'>
 					<NavigationMenuItem>
