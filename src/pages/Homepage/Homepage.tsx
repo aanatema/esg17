@@ -1,10 +1,11 @@
-import Navbar from "@/components/Navbar";
+import DesktopNavbar from "@/components/Navbar/DesktopNavbar";
 
 export default function Homepage() {
 	return (
-		<>
-			<Navbar />
+		<main>
+			<DesktopNavbar />
+
 			<h1>Home page</h1>
-		</>
+		</main>
 	);
 }
