@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Navbar from "@/components/Navbar/NavBar";
 
 export default function Contact() {
@@ -5,6 +6,7 @@ export default function Contact() {
 		<>
 			<Navbar />
 			<h1>Contact</h1>
+			<ContactForm />
 		</>
 	);
 }
