@@ -12,31 +12,33 @@ import { Button } from "./ui/button";
 
 export default function ContactForm() {
 	return (
-		<div className='w-full max-w-md'>
-			<form>
+		<div className='flex justify-center px-5 py-5'>
+			<form className='w-full max-w-xl min-w-xs'>
 				<FieldSet>
-					<FieldLegend>Formulaire de contact</FieldLegend>
+					<FieldLegend className='text-xl uppercase'>
+						Formulaire de contact
+					</FieldLegend>
 					<FieldDescription>
-						Remplissez les champs du formulaire avec soin
+						Envie de travailler ensemble ? Besoin d'un devis ou
+						d'informations complémentaires ? Complétez ce formulaire
+						et vous recevrez une réponse sous 48h.
 					</FieldDescription>
 					<FieldGroup>
-						<div className='gap-5 flex justify-center'>
+						<div className='gap-5 sm:flex justify-center'>
 							<Field>
-								<FieldLabel htmlFor='name'>Nom</FieldLabel>
+								<FieldLabel htmlFor='name'>Nom *</FieldLabel>
 								<Input
 									id='name'
-									autoComplete='off'
 									placeholder='Deschamps'
 									required
 								/>
 							</Field>
 							<Field>
 								<FieldLabel htmlFor='username'>
-									Prénom
+									Prénom *
 								</FieldLabel>
 								<Input
 									id='username'
-									autoComplete='off'
 									placeholder='Felix'
 									required
 								/>
@@ -45,17 +47,26 @@ export default function ContactForm() {
 
 						<Field>
 							<FieldLabel htmlFor='email'>
-								Adresse email
+								Adresse email *
 							</FieldLabel>
 							<Input
 								id='email'
-								autoComplete='off'
 								placeholder='felix.deschamps@email.com'
 								required
 							/>
 						</Field>
 						<Field>
-							<FieldLabel htmlFor='subject'>Sujet</FieldLabel>
+							<FieldLabel htmlFor='number'>
+								Numéro de téléphone{" "}
+							</FieldLabel>
+							<Input
+								id='phone'
+								autoComplete='off'
+								placeholder='0612345678'
+							/>
+						</Field>
+						<Field>
+							<FieldLabel htmlFor='subject'>Sujet *</FieldLabel>
 							<Input
 								id='subject'
 								autoComplete='off'
@@ -65,9 +76,10 @@ export default function ContactForm() {
 						</Field>
 						<Field>
 							<FieldLabel htmlFor='message'>
-								Votre message
+								Votre message *
 							</FieldLabel>
 							<Textarea
+								className='h-50'
 								id='message'
 								autoComplete='off'
 								placeholder='Bonjour, je suis artisan dans le secteur de X et souhaiterais avoir un devis pour ...'
